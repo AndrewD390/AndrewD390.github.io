@@ -1,0 +1,31 @@
+.class1 {
+  color: red;
+  text-align: center;
+  border: 5px blue solid;
+}
+
+#id2 {
+  background-color: black;
+  text-align: left;
+  color: white;
+  border-radius: 15px;
+  border: red solid 2px;
+}
+
+#id3 {
+  font-family: Impact, Charcoal, sans-serif;
+  color: #ffcc00;
+}
+
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:visited {
+  color: green;
+}
