@@ -2,155 +2,91 @@
 <html>
 <head>
   <title>Resume</title>
-  <style>
-  html, body {
-    background-color: #e6e6e6;
-  }
-  h1 {
-    text-align: center;
-    margin: -1px;
-  }
-  table {
-    border: 1px solid black;
-    width: 100%;
-    margin: 2px;
-  }
-  p {
-    font-size: 1.09em;
-    margin-top: -15px;
-  }
-  #info {
-    margin-top: 18px;
-    text-align: center;
-    line-height:95%;
-  }
-  h2 {
-    margin-bottom: -15px;
-  }
-  #sump {
-    margin-top: 15px;
-  }
-  #Rhigh {
-    display: inline-block;
-  }
-  #Lhigh {
-    display: inline-block;
-  }
-  #highlights {
-    font-size: 16px;
-  }
-  #Experienced {
-    margin-top: -15px;
-  }
-  #Experienced > div > p {
-    margin-top: 15px;
-  }
-  #Experienced > div {
-    margin-right: 60px;
-  }
-  li {
-    list-style-type: square;
-  }
-  .up {
-    margin-top: -30px;
-  }
-  .upminor {
-    margin-top: 0px;
-  }
-  .down {
-    margin-top: 30px;
-  }
-  </style>
+  <link type="text/css" rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <h1>Andrew Darling</h1>
-  <table align="center">
-    <tr>
-      <td></td>
-    </tr>
-  </table>
-  <div id="info">
-    <p>1234 Main Street, New York</p>
-    <p>Cell: (123) 456 - 7890</p>
-    <p>myemail-example@emailer.com</p>
+  <div id="header">
+    <h1>Andrew Darling</h1>
+    <div class="center">
+      <p>1234 Main Street, New York</p>
+      <p>Cell: (123) 456 - 7890</p>
+      <a href="https://mail.google.com" style="color: white">
+        <p>myemail-example@emailer.com</p>
+      </a>
+    </div>
   </div>
-  <div>
+  <br>
+  <div class="Info">
     <h2>Summary</h2>
-    <p id="sump">
-      Paving the roads to a better, sustainable future. Independent worker with high endurance<br>
-      and dependable communication skills. Amazing problem solving skills and able to work<br>
-      with little oversight. Great at collaborating in team environments and confident around<br>
+    <p>
+      Paving the roads to a better, sustainable future. Independent worker with high endurance
+      and dependable communication skills. Amazing problem solving skills and able to work
+      with little oversight. Great at collaborating in team environments and confident around
       computers.
     </p>
   </div>
-  <div id="highlights">
+  <br>
+  <div class="Info">
     <h2>Highlights</h2>
-    <ul id="Rhigh">
-      <li>Programming Knowledge</li>
-      <ol>
-        <li>Python</li>
-        <li>Java</li>
-        <li>HTML & CSS </li>
-        <li>Ruby</li>
-        <li>Pearl</li>
-      </ol>
-      <li>Task-Oriented</li>
-    </ul>
-    <ul id="Lhigh">
-      <li>Motivated</li>
-      <li>Hard Working</li>
-      <li>Accurate</li>
-      <li>Persuasive</li>
-      <li>Expierenced</li>
-      <li>Dedicated</li>
-      <li>Efficient</li>
-    </ul>
-  </div>
-  <div id="Experienced">
-    <h2>Experience</h2>
-    <div style="display: inline-block">
-      <p><strong>Childrens Hospital Colorado</strong></p>
+    <div>
+      <ul style="display: inline-block">
+        <li>Programming Knowledge</li>
+        <ol>
+          <li>Python</li>
+          <li>Java</li>
+          <li>HTML + CSS </li>
+          <li>Javascript</li>
+          <li>JQuery</li>
+        </ol>
+        <li>Task-Oriented</li>
+      </ul>
+      <ul style="display: inline-block">
+        <li>Motivated</li>
+        <li>Hard Working</li>
+        <li>Accurate</li>
+        <li>Persuasive</li>
+        <li>Expierenced</li>
+        <li>Dedicated</li>
+        <li>Efficient</li>
+      </ul>
     </div>
-    <div style="display: block">
-    <div class="up"style="display: inline-block;">
+  </div>
+  <br>
+  <div class="Info">
+    <h2>Experience</h2>
+    <div>
+      <a href="https://www.childrenscolorado.org/" class="link">
+        <p>Childrens Hospital Colorado</p>
+      </a>
+    </div>
+    <div>
+    <div>
       <ul>
         <li>Watched over toddlers</li>
         <li>Delivered refreshments</li>
         <li>Surgery Center Concierge</li>
       </ul>
     </div>
-    <div style="display: block; margin-top: 10px">
-      <p><strong>Codecademy</strong></p>
+    <div>
+      <a href="https://www.codecademy.com/" class="link">
+        <p>Codecademy</p>
+      </a>
     </div>
   </div>
-  <div id="Educated">
-    <h2 class="upminor">Education</h2>
-    <div class="down" style="display: inline-block; margin-right: 200px">
-      <p><strong>High School Junior</strong></p>
+  <br>
+  <div class="Info">
+    <h2>Education</h2>
+    <div>
+      <a href="http://littletonpublicschools.net/schools/arapahoe-high-school" class="link">
+        <p>High School Junior</p>
+      </a>
     </div>
-    <div style="display: block">
-    <div class="up"style="display: inline-block;">
+    <div>
+    <div>
       <ul>
         <li>GPA: 3.82</li>
         <li>AP Physics, AP Economics, Honors Calculus</li>
         <li>Track and Cross Country</li>
       </ul>
     </div>
-  </div>
 </body>
-</html>
-
-<!-- Scavenger Hunt -- >
-<!-- Change the URL to the code within -- >
-<!--
-Key:
-B -> D
-G -> I
-N -> P
--- >
-<!--
-Ygneqog vq vjg yggmna uecxgpigt jwpv. Cnn ctg ygneqog! Oquv qh vjg ejcnngpigu
-tgswktg rtqdngo uqnxkpi cpf rtqitcookpi mpqyngfig. Vjg ejcnngpigu yknn ewttgpvna
-dg hqewugf ctqwpf ravjqp, dwv yknn uqqp oqxg vqyctfu lcxcuetkrv. Iqqf nwem!
-...K cnoquv hqtiqv, ejcpig vjg WTN vq: gswcnkva.jvon
--- >
