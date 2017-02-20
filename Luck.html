@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucky</title>
+  <script>
+  function guess() {
+    var userGuess = prompt("Please guess a number between 1 and 5");
+    var computerGuess = Math.ceil(Math.random()*5);
+    var attempt=1;
+    while(userGuess!=computerGuess) {
+      userGuess = prompt("Sorry, the computer guessed "+ computerGuess+ " and you guessed "+ userGuess+ ". \n Try again?");
+      computerGuess = Math.ceil(Math.random()*5);
+      attempt+=1;
+    }
+    document.getElementById("main").innerHTML = "Congratulations! Both you and the computer guessed "+ computerGuess+ ". It only took you "+ attempt+ " tries.";
+  }
+  </script>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h2 style="color: #002699;">Welcome to "Guess a number!"</h2>
+    <p style="color:#3366ff;font-size: 20px;">Pick a number between 1 and 5. The computer will do the same. If both guesses are identical, you win. Otherwise, you can try again.</p>
+    <button style="font-size: 18px;" onclick="guess()">Begin!</button>
+    <h3 id="main" style="color: #1a53ff;"></h3>
+  </div>
+</body>
+</html>
