@@ -6,11 +6,9 @@
   function guess() {
     var userGuess = prompt("Please guess a number between 1 and 5");
     var computerGuess = Math.ceil(Math.random()*5);
-    var attempt=1;
-    while(userGuess!=computerGuess) {
+    for(var attempt=1; userGuess!=computerGuess;attempt+=1) {
       userGuess = prompt("Sorry, the computer guessed "+ computerGuess+ " and you guessed "+ userGuess+ ". \n Try again?");
       computerGuess = Math.ceil(Math.random()*5);
-      attempt+=1;
     }
     document.getElementById("main").innerHTML = "Congratulations! Both you and the computer guessed "+ computerGuess+ ". It only took you "+ attempt+ " tries.";
   }
