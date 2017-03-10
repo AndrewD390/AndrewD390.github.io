@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reaction Test</title>
+    <link href="reactionStyle.css" rel="stylesheet" type="text/css">
+    <script src="reactionHub.js"></script>
+  </head>
+  <body>
+    <div id="home">
+      <div id="header">
+        <h1 id="title">Reaction Test</h1>
+        <h2 id="subtitle">Test your reaction time!</h2>
+      </div>
+      <div class="center">
+        <button class="button" onclick="toGamemode('home', 'normal')">Normal</button>
+        <button class="button" onclick="toGamemode('home', 'challenge')">Challenge</button>
+      </div>
+    </div>
+    
+    <div id="test">
+      <div class="center">
+        <h1 id="title" onclick="toPage('test','home')">Reaction Test</h1>
+        <h3 id="subtitle">Click the shapes as fast as you can!</h3>
+        <hr id="line">
+        <h4 id="status">
+          Time: <span id="current">0</span>s
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          Average: <span id="average">0</span>s
+        </h4>
+      </div>
+      <div onClick="clicked('Rectangle')" id="Rectangle" class="clicker"></div>
+      <div onClick="clicked('Circle')" id="Circle" class="clicker"></div>
+      <div onClick="clicked('Triangle')" id="Triangle" class="clicker"></div>
+      <div onClick="clicked('Oval')" id="Oval" class="clicker"></div>
+    </div>
+  </body>
+</html>
